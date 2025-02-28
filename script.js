@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded",function(){//ensures that things in
         addButton.addEventListener("click",function(){
             let taskText = inputField.value.trim();
             if(taskText != ""){
-                addTask(taskText);//to direct the code flow to the function addTask
+                addTask(taskText);//to direct the js flow to the function addTask
                 inputField.value = "";//clear the input box
         }
             

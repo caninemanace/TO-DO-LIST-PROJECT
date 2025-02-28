@@ -1,3 +1,10 @@
+.back-img{
+    position: absolute;
+}
+.image1{
+    width: 100%;
+    height: 100vh;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +14,8 @@
     background-color: aliceblue;
     height: 20vh;
     border: 5px solid black;
+    position: relative;
+    border-radius: 20px;
 }
 h1{
     text-align: center;
@@ -17,6 +26,7 @@ h1{
     text-align: center;
     font-size: x-large;
     margin-top: 1.5em;
+    position: relative;
 }
 @keyframes wave {
     0% {transform: translateY(0px);}
@@ -44,6 +54,7 @@ h1{
     justify-content: center;
     align-items: center;
     margin-top: 3.5em;
+    position: relative;
 }
 .mylist{
     background-color: aliceblue;
@@ -59,4 +70,48 @@ h1{
     color: aliceblue;
     border-radius: 50px;
     margin: 20px;
+}
+.task-container {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.task-input {
+    flex: 1;
+    padding: 8px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+
+.add-btn {
+    padding: 8px 15px;
+    background-color: #948282;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.add-btn:hover {
+    background-color: #000000;
+    color: aliceblue;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
