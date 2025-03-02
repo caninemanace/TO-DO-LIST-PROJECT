@@ -41,6 +41,12 @@ document.addEventListener("DOMContentLoaded",function(){//ensures that things in
         resultDiv.appendChild(taskItem);
     }
     window.clicked = clicked; //to make clicked globally available
+
+    
+    /*let taskHistory = JSON.parse(localStorage.getItem("taskHistory")) || [];
+    taskHistory.push(taskItem);
+    localStorage.setItem("taskHistory", JSON.stringify(taskHistory));*/
+
 });
 
    
